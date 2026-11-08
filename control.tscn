@@ -51,5 +51,41 @@ grow_horizontal = 0
 grow_vertical = 2
 text = "100 Points"
 
+[node name="multiplierCounter" type="Label" parent="." unique_id=1801877377]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -115.0
+offset_top = -27.00003
+offset_right = -66.0
+offset_bottom = -4.0000305
+grow_horizontal = 0
+grow_vertical = 2
+rotation = -0.27925268
+text = "2x"
+
+[node name="rebirthButton" type="Button" parent="." unique_id=546850456]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -13.307495
+offset_right = 85.455
+offset_bottom = 13.307495
+grow_vertical = 2
+text = "Rebirth and win 2x +"
+
+[node name="rebirthPriceLabel" type="Label" parent="." unique_id=258289072]
+layout_mode = 1
+offset_left = 30.0
+offset_top = 345.0
+offset_right = 120.0
+offset_bottom = 368.0
+text = "5000 Points"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="multiplierButton" to="." method="_on_multiplier_button_pressed"]
+[connection signal="pressed" from="rebirthButton" to="." method="_on_rebirth_button_pressed"]
